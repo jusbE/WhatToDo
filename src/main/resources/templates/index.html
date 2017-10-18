@@ -9,6 +9,8 @@
 
 <p>This is great!</p>
 
+<div th:replace="@{'fragments/' + ${template}} :: ${template}"></div>
+
 <form th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out"/>
 </form>
